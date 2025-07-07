@@ -18,11 +18,13 @@
       height: 100vh;
       flex-direction: column;
     }
+
     .box {
       position: relative;
       display: block;
       text-align: center;
     }
+
     .box select {
       color: #000000;
       width: 250px;
@@ -33,9 +35,11 @@
       outline: none;
       border-radius: 5px;
     }
+
     .box select option {
       padding: 30px;
     }
+
     select, button {
       font-size: 16px;
       padding: 10px;
@@ -47,7 +51,9 @@
   <div style="text-align:center; margin-top:50px">
     <img src="https://maanprograms.org/assets2/images/maan-ctr.logo-removebg-preview.png" class="img-fluid top_logo" alt="Logo">
   </div>
+
   <h2 style="text-align:center;color: #f7de37; font-weight:200;">واجهة الدخول إلى المشاريع</h2>
+
   <form id="inputForm" style="background-color:#c9031d;padding:30px; border:solid 1px #c9031d; border-radius:20px;width: fit-content; text-align:center; margin-top:20px;">
     <div class="box">
       <h3 style="color: #ffffff; display:inline-block">اختر البرنامج</h3>
@@ -78,36 +84,52 @@
     function getProjects() {
       var program = document.getElementById("select1").value;
       let data = [];
+
       if(program == 1){
         data = [
-          { name : 'UNAO ', url : 'https://docs.google.com/spreadsheets/d/1bHldBA9Dy_N0cnfUg_tlhWlsdVAwydxHEtmA8i3-WX8/edit?gid=0#gid=0' },
-          { name : 'OCHG0AK', url : 'https://docs.google.com/spreadsheets/d/1eBJDCvyJd6m1vKs1RG4zKzz9tYWOAgXQZqpI6_MGbAk/edit?usp=sharing' },
-          { name : 'SAMG00H', url : 'https://docs.google.com/spreadsheets/d/1vyCnBXFfKW48Au5fr2oPzEvSqPR2rge0NpIa9OfPpiM/edit?usp=sharing' },
-          { name : 'SAMG00D', url : 'https://docs.google.com/spreadsheets/d/1f6nS5oBIkAHpvt-7WkSixHqrj0jG5qqoxOeOIAq0kaM/edit?gid=0#gid=0' },
-          { name : 'DCA NORAD', url : 'https://docs.google.com/spreadsheets/d/1uSlngDmU9nvo4-_sjdUHWSwoJfKq-KNZGSbN7AYz23o/edit?usp=sharing' },
-          { name : 'SPCG0F', url : 'https://docs.google.com/spreadsheets/d/1CYqt9Y0gHxi_vITwwY1gikXNMlK4CeYi4CSssJKAyaU/edit?usp=sharing' },
-          { name : 'APHR01 ', url : 'https://docs.google.com/spreadsheets/d/1vBQIS8wd1XIvPxxOIfyRcSuCo-8-p8ZUfC8U-ZrFtbM/edit?usp=sharing' }
+          {
+            name : 'UNAO ',
+            url : 'https://docs.google.com/spreadsheets/d/1bHldBA9Dy_N0cnfUg_tlhWlsdVAwydxHEtmA8i3-WX8/edit?gid=0#gid=0',
+            },{
+            name : 'OCHG0AK',
+            url : 'https://docs.google.com/spreadsheets/d/1eBJDCvyJd6m1vKs1RG4zKzz9tYWOAgXQZqpI6_MGbAk/edit?usp=sharing',
+            },{
+            name : 'SAMG00H',
+            url : 'https://docs.google.com/spreadsheets/d/1vyCnBXFfKW48Au5fr2oPzEvSqPR2rge0NpIa9OfPpiM/edit?usp=sharing',
+            },{
+            name : 'SAMG00D',
+            url : 'https://docs.google.com/spreadsheets/d/1f6nS5oBIkAHpvt-7WkSixHqrj0jG5qqoxOeOIAq0kaM/edit?gid=0#gid=0',
+            },{
+            name : 'DCA NORAD',
+            url : 'https://docs.google.com/spreadsheets/d/1uSlngDmU9nvo4-_sjdUHWSwoJfKq-KNZGSbN7AYz23o/edit?usp=sharing',
+            },{
+            name : 'SPCG0F',
+            url : 'https://docs.google.com/spreadsheets/d/1CYqt9Y0gHxi_vITwwY1gikXNMlK4CeYi4CSssJKAyaU/edit?usp=sharing',
+            },{
+            name : 'APHR01 ',
+            url : 'https://docs.google.com/spreadsheets/d/1vBQIS8wd1XIvPxxOIfyRcSuCo-8-p8ZUfC8U-ZrFtbM/edit?usp=sharing',
+            },
         ];
       } else if(program == 2){
         data = [
-          { name : 'OWFPG0C', url : 'https://docs.google.com/spreadsheets/d/1bE6eVNo7Kv0vh2F3a65dYYUuNO-HpqIt_xiPD948USs/edit?usp=sharing' },
-          { name : 'ACDG00U', url : 'https://docs.google.com/spreadsheets/d/11wA6Sbm8ONHBdUofSYTgfqmY86iJh1XisCoHLBnxEnk/edit?usp=sharing' },
-          { name : 'DCAG0CP', url : 'https://docs.google.com/spreadsheets/d/15i8OzWX3kvCOMZCU-YlWAQkuYupCVw0gho9iRizD6W8/edit?usp=sharing' }
-        ];
-      } else if(program == 3){
-        data = [
-          { name : 'SAMG00A ', url : 'https://docs.google.com/spreadsheets/d/1lkTNw13neF2jVOQoK_QwZA6PDns_IWoS_41gKfuNuJE/edit?usp=sharing' },
-          { name : 'SAMG00G', url : 'https://docs.google.com/spreadsheets/d/1Sj2PVJupez7XYfZeLM9WnVXuArxkTyOihrgPf2b4TUE/edit?usp=sharing' },
-          { name : 'OCHG0AM', url : 'https://docs.google.com/spreadsheets/d/1ARI0SliGTEszTmmDH2AldsvRUMLPKLsCx6Wzg_7v08I/edit?usp=sharing' },
-          { name : 'HEKG00L', url : 'https://docs.google.com/spreadsheets/d/1Lvf09mcLt-y5hqKLJil_I4NNwFnQZImUc_CZigiN0W0/edit?gid=0#gid=0' },
-          { name : 'HEKG00k', url : 'https://docs.google.com/spreadsheets/d/1JWOz3tTR-oBjGqKNzZy0o4BBON8tHnV5Th2J-QZBggQ/edit?usp=sharing' }
+          {
+            name : 'OWFPG0C',
+            url : 'https://docs.google.com/spreadsheets/d/1bE6eVNo7Kv0vh2F3a65dYYUuNO-HpqIt_xiPD948USs/edit?usp=sharing',
+          },{
+            name : 'ACDG00U',
+            url : 'https://docs.google.com/spreadsheets/d/11wA6Sbm8ONHBdUofSYTgfqmY86iJh1XisCoHLBnxEnk/edit?usp=sharing',
+          },{
+            name : 'DCAG0CP',
+            url : 'https://docs.google.com/spreadsheets/d/15i8OzWX3kvCOMZCU-YlWAQkuYupCVw0gho9iRizD6W8/edit?usp=sharing',
+          },
         ];
       }
       var options = '<option value="">اختر</option>';
       data.forEach((element) => {
-        options += '<option value="'+element.url+'">' +element.name+ '</option>';
+        options = options + '<option value="'+element.url+'">' +element.name+ '</option>';
       });
-      document.getElementById("select2").innerHTML = options;
+      el = document.getElementById("select2");
+      el.innerHTML = options;
     }
 
     function getUrlFile(){
