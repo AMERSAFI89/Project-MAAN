@@ -1,21 +1,122 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-<meta name="chromevox" content-script="no">
-<title> مشاريع مركز العمل التنموى معا</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" nonce="TgWtoYmvZLYc6b7nFzGhjg"><link rel="stylesheet" href="/static/macros/client/css/2091960867-mae_html_css_ltr.css">
-<script type="text/javascript" src="/static/macros/client/js/2862581186-warden_bin_i18n_warden.js" nonce="6fTbZAJxF8ixjasGtkTgzA"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>إدخال البيانات</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c9031d;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .box {
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+    .box select {
+      color: #000000;
+      width: 250px;
+      border: none;
+      font-size: 20px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      appearance: button;
+      outline: none;
+      border-radius: 5px;
+    }
+    .box select option {
+      padding: 30px;
+    }
+    select, button {
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
-<table id="warning-bar-table" class="full_size" cellspacing="0" cellpadding="0"><tr><td><div id="warning" class="warning-bar"></div></td></tr><tr><td style="height: 100%"><iframe id="sandboxFrame" title=" مشاريع مركز العمل التنموى معا" allow="accelerometer *; ambient-light-sensor *; autoplay *; camera *; clipboard-read *; clipboard-write *; encrypted-media *; fullscreen *; geolocation *; gyroscope *; magnetometer *; microphone *; midi *; payment *; picture-in-picture *; screen-wake-lock *; speaker *; sync-xhr *; usb *; web-share *; vibrate *; vr *" sandbox="allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-storage-access-by-user-activation">
-</iframe>
-</td></tr></table><script nonce="6fTbZAJxF8ixjasGtkTgzA">
-(function() {
-var el = document.getElementById('sandboxFrame');
-el.onload = function() {
-goog.script.init("\x7b\x22functionNames\x22:\x5b\x22saveData\x22,\x22doGet\x22,\x22saveProject\x22,\x22getSheetData\x22,\x22myFunction\x22\x5d,\x22sandboxMode\x22:\x22IFRAME_SANDBOX\x22,\x22callbackTimeout\x22:390000,\x22deploymentId\x22:\x22AKfycbzE6KlYxabPLU_HV7zETrVGDx9YnVwcR-QFmPEcsBJ_\x22,\x22eei\x22:\x22\x22,\x22sandboxHost\x22:\x22https:\/\/n-gjs3qopnaa4mpfduhv6xaj7kp7kczz3jsp4khja-0lu-script.googleusercontent.com\x22,\x22clientSideProperties\x22:\x7b\x22google.script.sandbox.mode\x22:\x22IFRAME_SANDBOX\x22,\x22google.script.host.origin\x22:\x22https:\/\/docs.google.com\x22\x7d,\x22actionPrefix\x22:\x22\/macros\/s\/AKfycbzE6KlYxabPLU_HV7zETrVGDx9YnVwcR-QFmPEcsBJ_\x22,\x22userHtml\x22:\x22\x3c!DOCTYPE html\x3e\\n\x3chtml lang\x3d\\\x22ar\\\x22 dir\x3d\\\x22rtl\\\x22\x3e\\n\x3chead\x3e\\n  \x3cmeta charset\x3d\\\x22UTF-8\\\x22\x3e\\n  \x3cmeta name\x3d\\\x22viewport\\\x22 content\x3d\\\x22width\x3ddevice-width, initial-scale\x3d1.0\\\x22\x3e\\n  \x3clink href\x3d\\\x22https:\/\/fonts.googleapis.com\/css2?family\x3dCairo:wght@300;400;500;600;700;800;900\x26amp;display\x3dswap\\\x22 rel\x3d\\\x22stylesheet\\\x22\x3e\\n  \x3ctitle\x3eإدخال البيانات\x3c\\\/title\x3e\\n  \x3cstyle\x3e\\n    body \x7b\\n      font-family: \x27Cairo\x27, sans-serif;\\n      margin: 0;\\n      padding: 0;\\n      background-color: #c9031d;\\n      text-align: center;\\n      display: flex;\\n      justify-content: center;\\n      align-items: center;\\n      height: 100vh;\\n      flex-direction: column;\\n    \x7d\\n\\n    .box \x7b\\n      position: relative;\\n      display: block;\\n      text-align: center;\\n    \x7d\\n\\n    .box select \x7b\\n      color: #000000;\\n      width: 250px;\\n      border: none;\\n      font-size: 20px;\\n      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);\\n      appearance: button;\\n      outline: none;\\n      border-radius: 5px;\\n    \x7d\\n\\n    .box select option \x7b\\n      padding: 30px;\\n    \x7d\\n\\n    select, button \x7b\\n      font-size: 16px;\\n      padding: 10px;\\n      margin: 10px;\\n    \x7d\\n  \x3c\\\/style\x3e\\n\x3c\\\/head\x3e\\n\x3cbody\x3e\\n  \x3cdiv style\x3d\\\x22text-align:center; margin-top:50px\\\x22\x3e\\n    \x3cimg src\x3d\\\x22https:\/\/maanprograms.org\/assets2\/images\/maan-ctr.logo-removebg-preview.png\\\x22 class\x3d\\\x22img-fluid top_logo\\\x22 alt\x3d\\\x22Logo\\\x22\x3e\\n  \x3c\\\/div\x3e\\n\\n  \x3ch2 style\x3d\\\x22text-align:center;color: #f7de37; font-weight:200;\\\x22\x3eواجهة الدخول إلى المشاريع\x3c\\\/h2\x3e\\n\\n  \x3cform id\x3d\\\x22inputForm\\\x22 style\x3d\\\x22background-color:#c9031d;padding:30px; border:solid 1px #c9031d; border-radius:20px;width: fit-content; text-align:center; margin-top:20px;\\\x22\x3e\\n    \x3cdiv class\x3d\\\x22box\\\x22\x3e\\n      \x3ch3 style\x3d\\\x22color: #ffffff; display:inline-block\\\x22\x3eاختر البرنامج\x3c\\\/h3\x3e\\n      \x3cselect id\x3d\\\x22select1\\\x22 onchange\x3d\\\x22getProjects()\\\x22\x3e\\n        \x3coption value\x3d\\\x22\\\x22\x3eاختر\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x221\\\x22\x3eتوفير خدمات الصرف الصحي ,المياه ,النظافة العامة,التوعية الصحية\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x222\\\x22\x3eدعم وتوفير الغذاء\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x223\\\x22\x3eتوفير المواد الغير غذائية\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x224\\\x22\x3eدعم المزارعين والقطاع الزراعي\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x225\\\x22\x3eالدعم النقدي\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x226\\\x22\x3eدعم المبادرات الشبابية والعمل المجتمعى\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x227\\\x22\x3eدعم التعليم\x3c\\\/option\x3e\\n        \x3coption value\x3d\\\x228\\\x22\x3eالحماية والدعم النفسي والاجتماعي\x3c\\\/option\x3e\\n      \x3c\\\/select\x3e\\n    \x3c\\\/div\x3e\\n    \x3cdiv class\x3d\\\x22box\\\x22\x3e\\n      \x3ch3 style\x3d\\\x22color:#ffffff;display:inline-block\\\x22\x3eاختر المشروع\x3c\\\/h3\x3e\\n      \x3cselect id\x3d\\\x22select2\\\x22 onchange\x3d\\\x22getUrlFile()\\\x22\x3e\\n        \x3coption value\x3d\\\x22\\\x22\x3eاختر\x3c\\\/option\x3e\\n      \x3c\\\/select\x3e\\n    \x3c\\\/div\x3e\\n    \x3cdiv style\x3d\\\x22text-align:center\\\x22\x3e\\n      \x3ca id\x3d\\\x22file_url\\\x22 href\x3d\\\x22#\\\x22 target\x3d\\\x22_blank\\\x22 style\x3d\\\x22border-radius:5px; margin:20px; padding:20px;font-size:20px;color: #f7de37; text-align:center; display:none\\\x22\x3eيرجى الضغط لتوجيهك لملف المشروع\x3c\\\/a\x3e\\n    \x3c\\\/div\x3e\\n  \x3c\\\/form\x3e\\n\\n  \x3cscript\x3e\\n    function getProjects() \x7b\\n      var program \x3d document.getElementById(\\\x22select1\\\x22).value;\\n      let data \x3d \x5b\x5d;\\n  \\n      if(program \x3d\x3d 1)\x7b\\n        data \x3d \x5b\\n          \x7b\\n            name : \x27UNAO \x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1bHldBA9Dy_N0cnfUg_tlhWlsdVAwydxHEtmA8i3-WX8\/edit?gid\x3d0#gid\x3d0\x27,\\n            \x7d,\x7b\\n            name : \x27OCHG0AK\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1eBJDCvyJd6m1vKs1RG4zKzz9tYWOAgXQZqpI6_MGbAk\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27SAMG00H\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1vyCnBXFfKW48Au5fr2oPzEvSqPR2rge0NpIa9OfPpiM\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27SAMG00D\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1f6nS5oBIkAHpvt-7WkSixHqrj0jG5qqoxOeOIAq0kaM\/edit?gid\x3d0#gid\x3d0\x27,\\n            \x7d,\x7b\\n            name : \x27DCA NORAD\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1uSlngDmU9nvo4-_sjdUHWSwoJfKq-KNZGSbN7AYz23o\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27SPCG0F\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1CYqt9Y0gHxi_vITwwY1gikXNMlK4CeYi4CSssJKAyaU\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27APHR01 \x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1vBQIS8wd1XIvPxxOIfyRcSuCo-8-p8ZUfC8U-ZrFtbM\/edit?usp\x3dsharing\x27,\\n            \x7d,\\n\\n        \x5d;\\n      \x7delse if(program \x3d\x3d 2)\x7b\\n            data \x3d \x5b\\n          \x7b\\n            name : \x27OWFPG0C\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1bE6eVNo7Kv0vh2F3a65dYYUuNO-HpqIt_xiPD948USs\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n              name : \x27ACDG00U\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/11wA6Sbm8ONHBdUofSYTgfqmY86iJh1XisCoHLBnxEnk\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27DCAG0CP\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/15i8OzWX3kvCOMZCU-YlWAQkuYupCVw0gho9iRizD6W8\/edit?usp\x3dsharing\x27,\\n            \x7d,\\n\\n        \x5d;\\n\\n      \x7delse if(program \x3d\x3d 3)\x7b\\n            data \x3d \x5b\\n          \x7b\\n            name : \x27SAMG00A \x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1lkTNw13neF2jVOQoK_QwZA6PDns_IWoS_41gKfuNuJE\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27SAMG00G\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1Sj2PVJupez7XYfZeLM9WnVXuArxkTyOihrgPf2b4TUE\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27OCHG0AM\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1ARI0SliGTEszTmmDH2AldsvRUMLPKLsCx6Wzg_7v08I\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27HEKG00L\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1Lvf09mcLt-y5hqKLJil_I4NNwFnQZImUc_CZigiN0W0\/edit?gid\x3d0#gid\x3d0\x27,\\n            \x7d,\x7b\\n            name : \x27HEKG00k\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1JWOz3tTR-oBjGqKNzZy0o4BBON8tHnV5Th2J-QZBggQ\/edit?usp\x3dsharing\x27,\\n            \x7d,\\n\\n        \x5d;\\n\x7delse if(program \x3d\x3d 4)\x7b\\n            data \x3d \x5b\\n          \x7b\\n            name : \x27HEKG0M\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1NBI8aezs8Wx9YRm9MgeZ-jSA1GxijxnrmVd0vsA0DSQ\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27OCHGAL\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1B_e0Nq9mtMblKx9c_AzRTPYEAWhIky43s68MMo6Xob4\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27DCAGCQ\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1SuxHycfdtA-_Z7xGKFqijlQ07h2eiT7i6-pRhUPNKms\/edit?usp\x3dsharing\x27,\\n            \x7d,\\n\\n      \x5d;  \\n            \x7delse if(program \x3d\x3d 5)\x7b\\n            data \x3d \x5b\\n          \x7b\\n            name : \x27DCAGCN\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1Ia1VrLg42JR_WkQAh5Z9CZ-3MAqc1zKimAPxsa4AEzk\/edit?usp\x3dsharing\x27,\\n            \x7d,\\n\\n     \x5d;        \\n \x7delse if(program \x3d\x3d 6)\x7b\\n            data \x3d \x5b\\n          \x7b\\n            name : \x27ACDG0T\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1a3En_pRG6MGE5nA2-rIT3r4HpdCvBtCCxztk7LoGe2U\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27GIZN\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1i_b17eHaqSnvezXM_CLNnbQnAH_ciwgjFq0TuzsD2wo\/edit?gid\x3d0#gid\x3d0\x27,\\n            \x7d,  \\n\\n            \x5d;  \\n             \x7delse if(program \x3d\x3d 7)\x7b\\n            data \x3d \x5b\\n          \x7b\\n            name : \x27UNCG00N \x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1moH_KC0qD6rhYJtUAWJ1sk9vXn-3mhyvNjI0roYkBho\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27AFHG00B\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1EKgRJQvvkr_VZrH73jm5_Q3FerCA8fJE32iIipAcY1I\/edit?usp\x3dsharing\x27,\\n            \x7d,\x7b\\n            name : \x27GNPG00B\x27,\\n            url : \x27https:\/\/docs.google.com\/spreadsheets\/d\/1kBCdHpt6lvhYMguH-ZT_e67cfgil75ipn9qdRdhZ_lk\/edit?usp\x3dsharing\x27\\n            \x7d,\\n\\n        \x5d;\\n      \x7d;\\n      var options \x3d \x27\x3coption value\x3d\\\x22\\\x22\x3eاختر\x3c\\\/option\x3e\x27;\\n      data.forEach((element) \x3d\x3e \x7b\\n        options \x3d options + \x27\x3coption value\x3d\\\x22\x27+element.url+\x27\\\x22\x3e\x27 +element.name+ \x27\x3c\\\/option\x3e\x27;\\n      \x7d);\\n      console.log(options);\\n      el \x3d document.getElementById(\\\x22select2\\\x22);\\n      el.innerHTML \x3d options;\\n\x7d\\nfunction getUrlFile()\x7b\\n      var url \x3d document.getElementById(\\\x22select2\\\x22).value;\\n      document.getElementById(\x27file_url\x27).href \x3d url;\\n      if(url)\x7b\\n        document.getElementById(\x27file_url\x27).style.display \x3d \\\x22inline-block\\\x22;\\n      \x7d\\n\x7d\\n    \x3c\\\/script\x3e\\n\\n    \x3cp id\x3d\\\x22status\\\x22\x3e\x3c\\\/p\x3e\\n\\n\\n\\n\\n    \x3c\\\/script\x3e\\n\\n\x3c\\\/body\x3e\\n\x3c\\\/html\x3e\\n\\n\\n\x22,\x22ncc\x22:\x22\x7b\\\x22awhs\\\x22:true\x7d\x22\x7d", "AJuLMu166s4qudFaOemyQLDOlN8FDCiPqg:1751893414269", undefined, true , true  , "true", "https:\/\/n-gjs3qopnaa4mpfduhv6xaj7kp7kczz3jsp4khja-0lu-script.googleusercontent.com", "");}
-el.src = 'https:\/\/n-gjs3qopnaa4mpfduhv6xaj7kp7kczz3jsp4khja-0lu-script.googleusercontent.com\/userCodeAppPanel';
-}());
-</script>
+  <div style="text-align:center; margin-top:50px">
+    <img src="https://maanprograms.org/assets2/images/maan-ctr.logo-removebg-preview.png" class="img-fluid top_logo" alt="Logo">
+  </div>
+  <h2 style="text-align:center;color: #f7de37; font-weight:200;">واجهة الدخول إلى المشاريع</h2>
+  <form id="inputForm" style="background-color:#c9031d;padding:30px; border:solid 1px #c9031d; border-radius:20px;width: fit-content; text-align:center; margin-top:20px;">
+    <div class="box">
+      <h3 style="color: #ffffff; display:inline-block">اختر البرنامج</h3>
+      <select id="select1" onchange="getProjects()">
+        <option value="">اختر</option>
+        <option value="1">توفير خدمات الصرف الصحي ,المياه ,النظافة العامة,التوعية الصحية</option>
+        <option value="2">دعم وتوفير الغذاء</option>
+        <option value="3">توفير المواد الغير غذائية</option>
+        <option value="4">دعم المزارعين والقطاع الزراعي</option>
+        <option value="5">الدعم النقدي</option>
+        <option value="6">دعم المبادرات الشبابية والعمل المجتمعى</option>
+        <option value="7">دعم التعليم</option>
+        <option value="8">الحماية والدعم النفسي والاجتماعي</option>
+      </select>
+    </div>
+    <div class="box">
+      <h3 style="color:#ffffff;display:inline-block">اختر المشروع</h3>
+      <select id="select2" onchange="getUrlFile()">
+        <option value="">اختر</option>
+      </select>
+    </div>
+    <div style="text-align:center">
+      <a id="file_url" href="#" target="_blank" style="border-radius:5px; margin:20px; padding:20px;font-size:20px;color: #f7de37; text-align:center; display:none">يرجى الضغط لتوجيهك لملف المشروع</a>
+    </div>
+  </form>
+
+  <script>
+    function getProjects() {
+      var program = document.getElementById("select1").value;
+      let data = [];
+      if(program == 1){
+        data = [
+          { name : 'UNAO ', url : 'https://docs.google.com/spreadsheets/d/1bHldBA9Dy_N0cnfUg_tlhWlsdVAwydxHEtmA8i3-WX8/edit?gid=0#gid=0' },
+          { name : 'OCHG0AK', url : 'https://docs.google.com/spreadsheets/d/1eBJDCvyJd6m1vKs1RG4zKzz9tYWOAgXQZqpI6_MGbAk/edit?usp=sharing' },
+          { name : 'SAMG00H', url : 'https://docs.google.com/spreadsheets/d/1vyCnBXFfKW48Au5fr2oPzEvSqPR2rge0NpIa9OfPpiM/edit?usp=sharing' },
+          { name : 'SAMG00D', url : 'https://docs.google.com/spreadsheets/d/1f6nS5oBIkAHpvt-7WkSixHqrj0jG5qqoxOeOIAq0kaM/edit?gid=0#gid=0' },
+          { name : 'DCA NORAD', url : 'https://docs.google.com/spreadsheets/d/1uSlngDmU9nvo4-_sjdUHWSwoJfKq-KNZGSbN7AYz23o/edit?usp=sharing' },
+          { name : 'SPCG0F', url : 'https://docs.google.com/spreadsheets/d/1CYqt9Y0gHxi_vITwwY1gikXNMlK4CeYi4CSssJKAyaU/edit?usp=sharing' },
+          { name : 'APHR01 ', url : 'https://docs.google.com/spreadsheets/d/1vBQIS8wd1XIvPxxOIfyRcSuCo-8-p8ZUfC8U-ZrFtbM/edit?usp=sharing' }
+        ];
+      } else if(program == 2){
+        data = [
+          { name : 'OWFPG0C', url : 'https://docs.google.com/spreadsheets/d/1bE6eVNo7Kv0vh2F3a65dYYUuNO-HpqIt_xiPD948USs/edit?usp=sharing' },
+          { name : 'ACDG00U', url : 'https://docs.google.com/spreadsheets/d/11wA6Sbm8ONHBdUofSYTgfqmY86iJh1XisCoHLBnxEnk/edit?usp=sharing' },
+          { name : 'DCAG0CP', url : 'https://docs.google.com/spreadsheets/d/15i8OzWX3kvCOMZCU-YlWAQkuYupCVw0gho9iRizD6W8/edit?usp=sharing' }
+        ];
+      } else if(program == 3){
+        data = [
+          { name : 'SAMG00A ', url : 'https://docs.google.com/spreadsheets/d/1lkTNw13neF2jVOQoK_QwZA6PDns_IWoS_41gKfuNuJE/edit?usp=sharing' },
+          { name : 'SAMG00G', url : 'https://docs.google.com/spreadsheets/d/1Sj2PVJupez7XYfZeLM9WnVXuArxkTyOihrgPf2b4TUE/edit?usp=sharing' },
+          { name : 'OCHG0AM', url : 'https://docs.google.com/spreadsheets/d/1ARI0SliGTEszTmmDH2AldsvRUMLPKLsCx6Wzg_7v08I/edit?usp=sharing' },
+          { name : 'HEKG00L', url : 'https://docs.google.com/spreadsheets/d/1Lvf09mcLt-y5hqKLJil_I4NNwFnQZImUc_CZigiN0W0/edit?gid=0#gid=0' },
+          { name : 'HEKG00k', url : 'https://docs.google.com/spreadsheets/d/1JWOz3tTR-oBjGqKNzZy0o4BBON8tHnV5Th2J-QZBggQ/edit?usp=sharing' }
+        ];
+      }
+      var options = '<option value="">اختر</option>';
+      data.forEach((element) => {
+        options += '<option value="'+element.url+'">' +element.name+ '</option>';
+      });
+      document.getElementById("select2").innerHTML = options;
+    }
+
+    function getUrlFile(){
+      var url = document.getElementById("select2").value;
+      document.getElementById('file_url').href = url;
+      if(url){
+        document.getElementById('file_url').style.display = "inline-block";
+      }
+    }
+  </script>
 </body>
 </html>
